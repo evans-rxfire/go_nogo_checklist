@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Prescribed Fire Go/No-Go Checklist</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1>Prescribed Fire Go / No-Go Checklist</h1>
+                <p>If the answer to any item below is "NO", <strong>DO NOT</strong> burn until corrected.</p>
+            </header>
+
+        <!-- Checklist Form -->
+            <form id="checklist-form">
+
+            <!-- Project Info -->
+                <section>
+                    <label for="burn-name">Burn Name:</label>
+                    <input type="text" id="burn-name" name="burnName" placeholder="Burn Unit and/or Property Name" required>
+                    <label for="burn-county">County</label>
+                    <input type="text" id="burn-county" name="burnCounty" placeholder="County">
+                    <label for="burn-boss">Burn Boss</label>
+                    <input type="text" id="burn-boss" name="burnBoss" placeholder="Name" required>
+                    <label for="burn-date">Date of Burn:</label>
+                    <input type="date" id="burn-date" name="burnDate" required>
+                </section>
+
+                <fieldset>
+                    <legend>Go / No-Go Checklist</legend>
+                    
+                    <div class="checklist-item">
+                        <p class="item" data-id="item1">1. Is the Burn Boss on site for the proposed burn?</p>
+                        <label for="item1-yes">Yes</label>
+                        <input type="radio" id="item1-yes" name="item1" value="yes">
+                        <label for="item1-no">No</label>
+                        <input type="radio" id="item1-no" name="item1" value="no">
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <p class="item" data-id="item2">2. Is a PBB-approved written burn plan established for the proposed burn?</p>
+                        <label for="item2-yes">Yes</label>
+                        <input type="radio" id="item2-yes" name="item2" value="yes">
+                        <label for="item2-no">No</label>
+                        <input type="radio" id="item2-no" name="item2" value="no">
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <p class="item" data-id="item3">3. Are all safety requirements met for the proposed burn?</p>
+                        <label for="item3-yes">Yes</label>
+                        <input type="radio" id="item3-yes" name="item3" value="yes">
+                        <label for="item3-no">No</label>
+                        <input type="radio" id="item3-no" name="item3" value="no">
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <p class="item" data-id="item4">4. Are all planned personnel and equipment on site?</p>
+                        <label for="item4-yes">Yes</label>
+                        <input type="radio" id="item4-yes" name="item4" value="yes">
+                        <label for="item4-no">No</label>
+                        <input type="radio" id="item4-no" name="item4" value="no">
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <p class="item" data-id="item5">5. Have all entities in the county where the burn is to take place been notified?</p>
+                        <label for="item5-yes">Yes</label>
+                        <input type="radio" id="item5-yes" name="item5" value="yes">
+                        <label for="item5-no">No</label>
+                        <input type="radio" id="item5-no" name="item5" value="no">
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <p class="sub-item" data-id="item5a">a. County Sheriff's Office</p>
+                        <label for="item5a-yes">Yes</label>
+                        <input type="radio" id="item5a-yes" name="item5a" value="yes">
+                        <label for="item5a-no">No</label>
+                        <input type="radio" id="item5a-no" name="item5a" value="no">
+                    </div>
+
+                    <div class="checklist-item">
+                        <p class="sub-item" data-id="item5b">b. Local Fire Department(s)</p>
+                        <label for="item5b-yes">Yes</label>
+                        <input type="radio" id="item5b-yes" name="item5b" value="yes">
+                        <label for="item5b-no">No</label>
+                        <input type="radio" id="item5b-no" name="item5b" value="no">
+                    </div>
+
+                    <div class="checklist-item">
+                        <p class="sub-item">c. If you are burning during a County Burn Ban:</p>
+                    </div>
+
+                    <div class="checklist-item">
+                        <p class="sub-sub-item" data-id="item5c1">- County Judge</p>
+                        <label for="item5c1-yes">Yes</label>
+                        <input type="radio" id="item5c1-yes" name="item5c1" value="yes">
+                        <label for="item5c1-no">No</label>
+                        <input type="radio" id="item5c1-no" name="item5c1" value="no">
+                        <label for="item5c1-NA">NA</label>
+                        <input type="radio" id="item5c1-NA" name="item5c1" value="NA">
+                    </div>
+
+                    <div class="checklist-item">
+                        <p class="sub-sub-item" data-id="item5c2">- County Commissioner's Court</p>
+                        <label for="item5c2-yes">Yes</label>
+                        <input type="radio" id="item5c2-yes" name="item5c2" value="yes">
+                        <label for="item5c2-no">No</label>
+                        <input type="radio" id="item5c2-no" name="item5c2" value="no">
+                        <label for="item5c2-NA">NA</label>
+                        <input type="radio" id="item5c2-NA" name="item5c2" value="NA">
+                    </div>
+
+                    <div class="checklist-item">
+                        <p class="sub-sub-item" data-id="item5c3">- TAMFS Regional Fire Coordinator</p>
+                        <label for="item5c3-yes">Yes</label>
+                        <input type="radio" id="item5c3-yes" name="item5c3" value="yes">
+                        <label for="item5c3-no">No</label>
+                        <input type="radio" id="item5c3-no" name="item5c3" value="no">
+                        <label for="item5c3-NA">NA</label>
+                        <input type="radio" id="item5c3-NA" name="item5c3" value="NA">
+                    </div>
+
+                    <div class="checklist-item">
+                        <p class="sub-sub-item" data-id="item5c4">- Texas Commission on Environmental Quality (TCEQ)</p>
+                        <label for="item5c4-yes">Yes</label>
+                        <input type="radio" id="item5c4-yes" name="item5c4" value="yes">
+                        <label for="item5c4-no">No</label>
+                        <input type="radio" id="item5c4-no" name="item5c4" value="no">
+                        <label for="item5c4-NA">NA</label>
+                        <input type="radio" id="item5c4-NA" name="item5c4" value="NA">
+                    </div>
+
+                    <div class="checklist-item">
+                        <p class="item" data-id="item6">6. Is written authorization to burn during a Burn Ban attached to the burn plan <strong>OR</strong> has the County Judge signed the burn plan?</p>
+                        <label for="item6-yes">Yes</label>
+                        <input type="radio" id="item6-yes" name="item6" value="yes">
+                        <label for="item6-no">No</label>
+                        <input type="radio" id="item6-no" name="item6" value="no">
+                        <label for="item6-NA">NA</label>
+                        <input type="radio" id="item6-NA" name="item6" value="NA">
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <p class="item" data-id="item7">7. Have all necessary fire suppression units been briefed on the burn plan?</p>
+                        <label for="item7-yes">Yes</label>
+                        <input type="radio" id="item7-yes" name="item7" value="yes">
+                        <label for="item7-no">No</label>
+                        <input type="radio" id="item7-no" name="item7" value="no">
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <p class="item" data-id="item8">8. Has the Burn Boss determined risks are acceptable?</p>
+                        <label for="item8-yes">Yes</label>
+                        <input type="radio" id="item8-yes" name="item8" value="yes">
+                        <label for="item8-no">No</label>
+                        <input type="radio" id="item8-no" name="item8" value="no">
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <p class="item" data-id="item9">9. Has the Burn Boss obtained a current weather forecast?</p>
+                        <label for="item9-yes">Yes</label>
+                        <input type="radio" id="item9-yes" name="item9" value="yes">
+                        <label for="item9-no">No</label>
+                        <input type="radio" id="item9-no" name="item9" value="no">
+                    </div>
+
+                    <div class="checklist-item">
+                        <p class="item" data-id="item10">10. Is the current weather within the burn plan parameters?</p>
+                        <label for="item10-yes">Yes</label>
+                        <input type="radio" id="item10-yes" name="item10" value="yes">
+                        <label for="item10-no">No</label>
+                        <input type="radio" id="item10-no" name="item10" value="no">
+                    </div>
+
+                    <div class="checklist-item">
+                        <p class="item" data-id="item11">11. Is the fire behavior projected to be within the burn parameters?</p>
+                        <label for="item11-yes">Yes</label>
+                        <input type="radio" id="item11-yes" name="item11" value="yes">
+                        <label for="item11-no">No</label>
+                        <input type="radio" id="item11-no" name="item11" value="no">
+                    </div>
+
+                    <div class="checklist-item">
+                        <p class="item" data-id="item12">12. Are projected fire effects acceptable?</p>
+                        <label for="item12-yes">Yes</label>
+                        <input type="radio" id="item12-yes" name="item12" value="yes">
+                        <label for="item12-no">No</label>
+                        <input type="radio" id="item12-no" name="item12" value="no">
+                    </div>
+
+                    <div class="checklist-item">
+                        <p class="item" data-id="item13">13. Does smoke management adhere to TCEQ guidelines?</p>
+                        <label for="item13-yes">Yes</label>
+                        <input type="radio" id="item13-yes" name="item13" value="yes">
+                        <label for="item13-no">No</label>
+                        <input type="radio" id="item13-no" name="item13" value="no">
+                    </div>
+                </fieldset>
+
+            <!-- Signature -->
+                <div class="signature-container">
+                    <label id="signature-label">Burn Boss Signature:</label>
+                    <span id="signature-line" class="signature-line"></span>
+                </div>
+            
+            <!-- Buttons -->
+                <div class="form-buttons">
+                    <button type="submit">Save Checklist</button>
+                    <button type="button" id="pdf-btn">Download PDF</button>
+                    <button type="button" id="reset-btn">Reset</button>
+                </div>
+
+            </form>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <script src="main.js"></script>
+
+    </body>
+</html>

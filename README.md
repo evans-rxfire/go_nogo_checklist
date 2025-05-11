@@ -1,2 +1,2 @@
-# go_nogo_checklist
-Basic Go/No Go checklist for Prescribed Fire Burn Bosses
+# goNogoChecklists
+Simple Go-No Go checklists for prescribed fire managers.
